@@ -1,6 +1,7 @@
 
 package com.example.jobagapi.domain.repository;
 
+import com.example.jobagapi.domain.model.Company;
 import com.example.jobagapi.domain.model.Employeer;
 
 import org.springframework.data.domain.Page;
@@ -14,4 +15,5 @@ import java.util.Optional;
 public interface EmployeerRepository extends JpaRepository<Employeer,Long> {
     public Page<Employeer> findById(Long Id, Pageable page);
     public Optional<Employeer> findByPosicion(String posicion);
+    Page<Employeer> findByPosicion(String posicion, Pageable pageable); //Encontrar por Id
 }

@@ -153,13 +153,7 @@ public class CompanyServiceImplTest {
         Employeer employeer = new Employeer(employeerId, "firstname", "lastname", "email", 98212L, "password", "document", " posicion");
         Sector sector = new Sector().setId(1L);
         Company company = new Company(1L, "name", "description", "logo", 123L, "dirección", employeer, sector);
-
         Company companynew= new Company();
-
-
-
-
-
 
     }
 
