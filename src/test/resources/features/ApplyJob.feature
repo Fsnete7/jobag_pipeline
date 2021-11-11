@@ -3,7 +3,7 @@ Feature: Post Job Functionality
 
   Scenario Outline: As a postulant i want to postulate a new job.
     Given I want a new job
-    And The job offer have a stable minimum <salary> and <id>
+    And The job offer have a stable masdinimum <salary> and <id>
     Then I should be able to see my newly job
 
     Examples:

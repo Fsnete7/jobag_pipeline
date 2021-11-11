@@ -3,7 +3,7 @@ Feature: Register a new Employeer
   Scenario Outline: As a user i want to sign up as a employeer with a not used phone number.
 
     Given I can sign up as a employeer
-    And I sending employeer to be created with employeer <id>
+    And I sending employeer to be created with employeersfs <id>
     Then I should be able to see my newly created employeer
     Examples:
       | id |

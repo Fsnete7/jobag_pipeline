@@ -1,6 +1,9 @@
 package com.example.jobagapi.domain.model;
 
 import org.apache.logging.log4j.message.Message;
+
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.validator.constraints.UniqueElements;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.ModelAndView;
@@ -21,9 +24,6 @@ public class User extends AuditModel{
     private String firstname;
     @NotNull
     private String lastname;
-
-
-
 
 
     @NotNull

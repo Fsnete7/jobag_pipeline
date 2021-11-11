@@ -27,7 +27,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ApplyJobSteps {
 
     @LocalServerPort
-    private int port;
     private RestTemplate restTemplate = new RestTemplate();
     private String postUrl="http://localhost:8080";
 
